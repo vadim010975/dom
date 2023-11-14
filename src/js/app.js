@@ -12,6 +12,5 @@ setInterval(() => {
     newCellEl = board.cells[Math.floor(Math.random() * board.cells.length)];
   } while (newCellEl === cellEl);
   newCellEl.appendChild(imgEl);
-  board.cells[cellEl].innerHTML = "";
   cellEl = newCellEl;
 }, 2000);
